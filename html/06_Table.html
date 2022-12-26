@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 예제입니다</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse : collapse;
+        }
+
+    	th, td { padding:10px 20px; }
+    </style>
+</head>
+<body>
+    <h3>caption, th 활용한 표 만들기</h3>
+    <table>
+        <caption>선물용과 가정용 상품</caption>  <!-- 표제목 : 표의 위쪽 중앙에 위치-->
+        <tr>
+            <th>용도</th>     <!-- 가운데 정렬, 진하게-->
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">선물용</td>
+            <td>3Kg</td>
+            <td>11~16과</td>
+            <td>35,000</td>
+        </tr>
+
+        <tr>
+            <td>5Kg</td>
+            <td>18~26과</td>
+            <td>52,000</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">가정용</td>
+            <td>3Kg</td>
+            <td>11~26과</td>
+            <td>30,000</td>
+        </tr>
+
+        <tr>
+            <td>5Kg</td>
+            <td>18~26과</td>
+            <td>47,000</td>
+        </tr>
+    </table>
+    <br/><br/>
+
+    <h3>표</h3>
+    <table>
+        <caption>요안도라 객실</caption>
+        <thead>
+            <tr style="background-color: gray;">
+                <th>방이름</th>
+                <th>대상</th>
+                <th>크기</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>유채방</td>
+                <td>여성 토미토리</td>
+                <td rowspan="3">4인실</td>
+                <td rowspan="4">1인 20,000</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">동백방</td>
+                <td>동성 토미토리</td>
+            </tr>
+
+            <tr>
+                <td>가족1팀</td>
+            </tr>
+
+            <tr>
+                <td>천혜향방</td>
+                <td>-</td>
+                <td>2인실</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4" style="background-color: gray;">바깥채 전체를 렌트합니다</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
