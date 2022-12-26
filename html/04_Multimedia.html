@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 및 영상 불러오기 예제</title>
+</head>
+<body>
+    <!--  ./ :현재 디렉토리(폴더)를 의미
+            ../ : 상위 디렉토리를 의미 -->
+
+    <h3>이미지 삽입</h3>
+    <img src="./pengsoo.png"/>
+    <img src="./pengsoo.png" width="50" height="50"/>
+    <img src="./apple.png" alt="이미지 준비중입니다" />
+    <br/><br/>
+
+    <img src="./../Images/pengsoo.png"/>
+    <img src="./../Images/006.jpg"/>
+    <br/><br/>
+
+    <img src="https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png"/>
+    <img src="https://www.google.co.kr/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.4-law.gif"/>
+    <br/><br/>
+
+    <h3>파일 삽입</h3>
+    <object data="./../Images/product.pdf" width="900" height="800"></object>
+    <br/><br/>
+
+    <h3>오디오 삽입</h3>
+    <audio src="./../Meadis/spring.mp3" controls></audio>
+    <br/><br/>
+
+    <h3>비디오 삽입</h3>
+    <video src="./../Meadis/salad.mp4" controls width="300"></video>
+</body>
+</html>

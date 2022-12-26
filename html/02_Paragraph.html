@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록과 문단 예제입니다</title>
+</head>
+<body>
+    <h1>목록</h1>
+    <p>
+        P태그는 문단을<br/> 정의하는 태그입니다.
+        주로 본문에 사요되는 태그로써 단락을 구분함 <br/>
+        입력한 내용 앞뒤로 빈줄(자동줄바꿈이) 생기면서 텍스트 단락이 만들어짐
+    </p>
+
+    <pre>
+        PRE태그입니다
+        사용자가 작성한 내용 그대로 출력됨
+        그러나 웹 문서를 소리로 읽어 주는 기계나 점자로 표시해주는 기계는
+        PRE태그가 적용된 부분을 만나면 건너 뛰어 버림
+    </pre>
+
+    <h1>순서있는 없는 리스트</h1>
+    <p>지역리스트 -  순서가 없는</p>
+    <ul style="list-style-type:square">   <!-- 기본 : disc-->
+        <li>서울</li>
+        <li>경기</li>
+        <li>충청</li>
+        <li>전라</li>
+        <li>경상</li>
+        <li>강원</li>
+    </ul>
+
+    <p>메뉴리스트 - 순서 있는</p>
+    <ol type="i">  <!-- 기본 : 1, 2, 3, 4, ..... -->
+        <li>MENU1</li>
+        <li>MENU2</li>
+        <li>MENU3</li>
+        <li>MENU4</li>
+    </ol>
+
+    <p>대분류/소분류</p>
+    <dt>메뉴리스트</dt>  <!-- 대분류 : 이름(제목)-->
+    <dd>MENU1</dd>     <!-- 소분류 : 값(설명)-->
+    <dd>MENU2</dd>
+    <dd>MENU3</dd>
+    <dd>MENU4</dd>
+</body>
+</html>

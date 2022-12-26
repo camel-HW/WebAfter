@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 페이지 이동</title>
+</head>
+<body>
+    <h3>외부 사이트 또는 내부 페이지 이동</h3>
+    <ol>
+        <li>
+            <!-- target : 새창으로 새 문서로 바꿈 -->
+            <a href="https://www.naver.com/" target="_blank"> 네이버 페이지 이동 </a>
+        </li>
+
+        <li>
+            <!-- target : 현재 page에서 새 문서로 바꿈 -->
+            <a href="https://www.google.co.kr/" target="_self"> 구글 페이지 이동 </a>
+        </li>   
+
+        <li>
+            <a href="http://127.0.0.1:5500/html/01_Font.html">01.Font.html</a>
+        </li>
+    </ol>
+    <br/><br/>
+
+    <h3>동일 페이지 이동 (책갈피)</h3>
+    <div id="back">
+        <a href="#apple">apple</a>
+        <a href="#banana">banana</a>
+        <a href="#melon">melon</a>
+    </div>
+
+    <div style="margin-top: 800px;" id="apple">첫번째 - apple</div>
+    <a href="#back">되돌아가기 - 홈</a>
+
+    <div style="margin-top: 1000px;" id="banana">두번째 - bananana</div>
+    <a href="#back">되돌아가기 - 홈</a>
+
+    <div style="margin-top: 1500px;" id="melon">세번째 - melon</div>
+    <a href="#back">되돌아가기 - 홈</a>
+
+</body>
+</html>
