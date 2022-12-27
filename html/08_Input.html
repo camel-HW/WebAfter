@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse : collapse;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <caption>Input Tag</caption>
+            <tr>
+                <td>TEXT TYPE</td>
+                <td><input type="text"  name="uid" /></td>
+            </tr>
+
+            <tr>
+                <td>PASSWORD TYPE</td>
+                <td><input type="password" name="upw" maxlength="5" /></td>
+            </tr>
+
+            <tr>
+                <td>RADO TYPE</td>
+                <td>
+                    <input type="radio" name="gender" value="남자" checked/>남자
+                    <input type="radio" name="gender" value="여자"/>여자
+                </td>
+            </tr>
+
+            <tr>
+                <td>CHECKBOX TYPE</td>
+                <td>  <!-- 서버에 배열로 간다.-->
+                    <input type="checkbox" name="subject" value="자바" /> JAVA
+                    <input type="checkbox" name="subject" value="JSP"/>JSP
+                    <input type="checkbox" name="subject" value="아이폰" checked/> iPhone
+                </td>
+            </tr>
+
+            <tr>
+                <td>FILE TYPE</td>
+                <td>
+                    <input type="file" name="file"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>BUTTON TYPE</td>
+                <td>
+                    <!-- FORM 예제에서 확인하자-->
+                    <input type="button" value="누르세요"/>
+                    <input type="submit" value="전송합니다"/>
+                    <input type="reset" value="취소합니다"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>COLOR TYPE</td>
+                <td>
+                    <input type="color" name="abc"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DATE TYPE</td>
+                <td>
+                    <input type="date" name="xyz"/>
+                </td>
+            </tr>
+        </table>
+        <br/><br/>
+
+        <fieldset style="width: 500px;">
+            <legend><strong>과일정보</strong></legend>
+            <div>SELECT</div>
+            <select name="fruit1">
+                <!-- <option></option> -->
+                <option value="apple">사과</option>
+                <option value="바나나">바나나</option>
+                <option value="pineapple" selected>파인애플</option>
+            </select>
+            <br/><br/>
+
+            <div>SELECT - Multiple</div>
+            <select multiple size="5" name="fruit2">
+                <option value="apple">사과</option>
+                <option value="바나나">바나나</option>
+                <option value="파인애플">파인애플</option>
+                <option value="melon">메론</option>
+            </select>
+            <br/><Br/>
+
+            <div>TEXT AREA</div>
+            <textarea rows="10" cols="100" name="con"></textarea>
+        </fieldset>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

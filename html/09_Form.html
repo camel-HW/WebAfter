@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 예제입니다</title>
+    <style>
+		fieldset {  width: 500px; }
+		fieldset legend {  font-weight:bold;  }
+		li { list-style:none; margin: 10px;}
+		label {  width:80px;  float:left; }
+		div { width:500px; text-align: center; margin-top: 10px; }
+	</style>
+</head>
+<body>
+    <form action="server address(URL)" method="get">
+        <span>아이디</span>
+        <input type="text" name="uid"/>
+        <br/><br/>
+
+        <span>비밀번호</span>
+        <input type="password" name="upw"/>
+        <br/><br/>
+
+        <input type="submit"  value="전송"/>
+        <input type="reset" value="취소"/>
+    </form>
+    <br/><br/>
+
+    <form aciton="server address(URL)" method="get">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>
+                    <label for="prod">주문상품</label>
+                    <input type="text" id="prod" name="prod"  value="상품용 3KG" readonly/>
+                </li>
+
+                <li>
+                    <label for="uname">이름</label>
+                    <input type="text" name="username" id="uname"/>
+                </li>
+            </ul>
+
+        </fieldset>
+    </form>
+</body>
+</html>
