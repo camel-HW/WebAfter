@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼합 선택자</title>
+	<style>
+		/* Tag, id, class*/
+		div{
+			font-size: 12px;
+			color: skyblue;
+		}
+		.show{font-size: 20px; font-family: 궁서체;} 
+		#disp{font-size:40px;}
+	</style>
+</head>
+<body>
+	<div> 연습입니다. 12px, skyblue </div> 
+	<br/><br/>
+	
+	<div class="show">  <!-- tag < class-->
+		연습입니다. (12px, 20px(우선순위 높다)), skyblue, 궁서체 
+	</div><br/><br/>
+	
+	<div id="disp">   <!-- tag < id -->
+		연습니다. (12px, 40px(우선순위 높다)), skyblue 
+	</div><br/><br/>
+	
+	<div class="show" id="disp">   <!-- tag < class  <  id -->
+		id 속성이 우선순위 가장 높음 (12px, 20px, 40px), skyblue, 궁서체
+	</div><br/><br/>
+	
+	<div class="show" id="disp" style="font-size: 9px;">
+		 style 속성이 우선순위 가장 높음 (12px, 20px, 40px, 9px), skyblue <br/>
+		 상속 받고, 오버라이딩 한 것임.
+	</div>
+
+	<!-- 모든 태그 (br 제외)는
+		 속성에 id, class, style 사용가능함 -->
+</body>
+</html>
+
+
+
+

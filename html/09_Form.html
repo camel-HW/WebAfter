@@ -41,9 +41,39 @@
                     <label for="uname">이름</label>
                     <input type="text" name="username" id="uname"/>
                 </li>
-            </ul>
 
+                <li>
+                    <label for="addr">배송주소</label>
+                    <input type="text" size="40" name="addr" id="addr"/>
+                </li>
+
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="text" name="email" id="email"/>
+                </li>
+
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="text" placeholder="하이픈 빼고 입력하세요(0101231234)"
+                             size="35" name="phone" id="phone"/>
+                </li>
+
+                <li>
+                    <label for="d_day">배송지정</label>
+                    <input type="date" name="d_day" id="d_day"/>
+                    <small>(주문일로부터 최소3일 이후)</small>
+                </li>
+
+                <li>
+                    <label for="meno">메모</label>
+                    <textarea rows="4" cols="40" name="memo" id="memo"></textarea>
+                </li>
+            </ul>
         </fieldset>
+        <div>
+            <input type="submit" value="주문"/> <!-- form 정의한 서버주소 이동-->
+            <input type="reset" value="취소"/>  <!--초기화-->
+        </div>
     </form>
 </body>
 </html>

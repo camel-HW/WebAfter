@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자식 후손(하위)선택자</title>
+	<style>
+		li{
+			list-style-type:none ;
+		}
+
+		#one > .menu{
+			color: blue;
+		}
+
+		#two > .menu{
+			color:red;
+		}
+
+		section > p{   /*자식만*/
+			color: pink;
+		}
+
+		section p{     /*후손(자식포함)*/
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>예약방법 & 사용요금</h1>
+		<p>아직 온라인 예약 신청</p>
+		<div>
+			<p>가족실(2~4인) : 40,000원/일</p>
+			<p>토미토리(4인 공용) : 25,000원/일</p>
+		</div>
+	</section>
+
+	<nav>
+		<ul id="one">
+			<li class="menu">MENU1</li>
+			<li>MENU2</li>
+			<li class="menu">MENU3</li>
+			<li>MENU4</li>
+			<li class="menu">MENU5</li>
+		</ul>
+		
+		<ul id="two">
+			<li class="menu">MENU1</li>
+			<li>MENU2</li>
+			<li class="menu">MENU3</li>
+			<li>MENU4</li>
+			<li class="menu">MENU5</li>
+		</ul>
+	</nav>
+</body>
+</html>
+
