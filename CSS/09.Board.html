@@ -5,15 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>선긋기</title>
+	<style>
+		div{
+			font-size: 14px;
+			font-family: 맑은 고딕;
+		}
+
+		.myBorder{
+			border-style: solid;
+			border-width: 5px;
+			border-color: red;
+
+			background-color: yellow;
+		}
+
+		.myBoarderStyle{
+			/*위쪽 선긋기*/
+			border-top-style: dotted;
+			border-top-width: 5px;
+			border-top-color: red;
+
+			/*오른쪽 선긋기*/
+			border-right-style: solid;
+			border-right-width: 10px;
+			border-right-color: olive;
+
+			/*아래쪽 선긋기*/
+			border-bottom-style: dotted;
+			border-bottom-width: 3px;
+			border-bottom-color: gray;
+
+			/*왼쪽 선긋기*/
+			border-left-style: solid;
+			border-left-width: 3px;
+			border-left-color: purple ;
+		}
+	</style>
 </head>
 <body>
 	<div>연습입니다.</div>
 	<br/><br/>
 	
-	<div>연습입니다.</div>
+	<div class="myBorder">연습입니다.</div>
 	<br/><br/>
 	
-	<div>연습입니다.</div>
+	<div class="myBoarderStyle">연습입니다.</div>
 	<br/><br/>
 </body>
 </html>

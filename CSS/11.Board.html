@@ -5,17 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>선긋기</title>
+	<style>
+		body{
+			margin-top: 0px;
+			margin-left: 0px;
+			/* margin-right: 0px;
+			margin-bottom: 0px; 
+			
+			시계방향
+			margin:10px 0px 0px 10px
+           (top) (right) (bottom) (left)
+
+		   margin:10px 0px;
+           (top, bottom) (right, left) */
+		}
+
+		div{
+			border: solid 1px red;
+			width: 500px;
+			height: 60px;
+			margin-left: 100px;
+			margin-top: 300px;
+		}
+
+		#hangul > label, #alphabet > span{
+			border: solid 1px blue;
+			display: block;
+			width: 100px;
+			height: 30px;
+			float:left;
+
+			text-align: center;
+			line-height: 30px;
+			border-left-width: 0px;
+
+			margin-top: 10px;
+		}
+
+	</style>
 </head>
 <body>
-	<div>	
-		<label>가</label>
+	<div id="hangul">	
+		<label style="border-left-width: 1px;">가</label>
 		<label>나</label>
 		<label>다</label>
 	</div>
 	<br/><br/>
 	
-	<div>
-		<span>AA</span>
+	<div id="alphabet">
+		<span style="border-left-width: 1px;">AA</span>
 		<span>BB</span>
 		<span>CC</span>
 	</div>

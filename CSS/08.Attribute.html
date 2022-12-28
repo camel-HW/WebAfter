@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>속성 선택자 </title>
+	<style>
+		input[type]{
+			color: orange;
+		}
+
+		img[alt]{
+			color: red;
+		}
+
+		span[id ^="complex"]{    /* id |="complex*/
+			color:blue;
+		}
+
+		span[id $='text1']{
+			font-size: 20px;
+		}
+
+		span[id *='text']{    /* id ~="text*/
+			background-color: yellow;
+		}
+	</style>
 </head>
 <body>
-	<span>simpletext1</span>
-	<span>simpletext2</span>
-	<span>complextext1</span>
-	<span>complextext2</span>
-	<span>complex</span>
+	<span id="simpletext1">simpletext1</span>
+	<span id="simpletext2">simpletext2</span>
+	<span id="complextext1">complextext1</span>
+	<span id="complextext2">complextext2</span>
+	<span id="complex">complex</span>
 	<br/><br/>
 
 	<form>
@@ -29,7 +50,7 @@
 	</form>
 	<br/>
 	
-	<img width="200" height="100" src="./../Images/pengsoo.png" alt="이미지 중입니다."/>
+	<img width="200" height="100" src="./pengsoo.png" alt="이미지 중입니다."/>
 	<br/>
 </body>
 </html>

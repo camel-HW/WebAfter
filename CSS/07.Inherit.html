@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>동위(형제, 바로아래동생) 선택자 </title>
+	<style>
+		#content > .title ~ div{        /* .title,  #content  .title*/
+			font-size: 20px;
+			color: blue;
+		}
+
+		#content > .title + div{				/* .title,  #content  .title*/
+			font-size: 9px;
+			color: yellow;
+		}
+	</style>
 </head>
 <body>
-	<div>
+	<div id="content">
 		<div>안녕하세요.</div>
 	
-		<div>Hi</div>
+		<div class="title" style="color: red; font-size: 20px;">Hi</div>
 	
 		<div>ONE</div>
 		<div>TWO</div>
