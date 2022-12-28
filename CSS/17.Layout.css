@@ -41,4 +41,34 @@ div{
     width: 18%;
     height: 50px;
     line-height: 50px;
+    border-left-width: 0px;
 }
+
+#wrap{
+    border: 1px solid red;
+    width: 98%;
+    height: 1000px;
+    margin: 0px auto;
+}
+
+#wrap > #content, #wrap > #banana{
+    height: 1000px;
+    font-size: 1.5em;
+    line-height: 1000px;
+    float: left;
+}
+
+#wrap > #content{
+    width: 80%;
+}
+
+#wrap > #banana{
+    width: 18%;
+}
+
+#footer{
+    height: 100px;
+    line-height: 100px;
+    margin-top: 20px;
+}
+

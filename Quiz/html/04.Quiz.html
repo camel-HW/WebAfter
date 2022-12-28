@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 4번</title>
+    <style>
+        li{
+            line-height: 30px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>프론트엔트 개발자 지원서</h1>
+    HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾 <br/>
+    습니다.
+
+    <form action="#" method="get">
+        <h4>개인정보</h4>
+        <ul>
+            <li>
+                <label for="uname">이름</label>
+                <input type="text" name="uname" id="uname" placeholder="공백없이 입력하세요." >
+            </li>
+            <li>
+                <label for="uphone">전화번호</label>
+                <input type="text" name="uphone" id="uphone">
+            </li>
+        </ul>
+
+        <h4>지원분야</h4>
+        <ul>
+            <li>
+                <lable>
+                    <input type="radio" name="field" value="웹 퍼블리싱" />웹 퍼블리싱
+                </lable><br/>
+
+                <label>
+                    <input type="radio" name="field" value="웹 애플리케이션 개발" />웹 어플리케이션 개발
+                </label><br/>
+
+                <label>
+                    <input type="radio" name="field" value="개발 환경 개선" />개발 환경 개선
+                </label><br/>
+            </li>
+        </ul>
+
+        <h4>지원동기</h4>
+        <div>
+            <textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략하게 써주세요."></textarea>
+        </div>
+
+        <div>
+            <input type="button" value="접수하기"/>
+            <input type="reset" value="다시쓰기"/>
+        </div>
+
+    </form>
+</body>
+</html>
