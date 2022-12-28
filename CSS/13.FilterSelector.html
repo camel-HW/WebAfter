@@ -5,12 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>가상클래스선택자- 문자 블록 </title>
+	<style>
+		#content{
+			border: solid 0px red;
+			width: 300px;
+		}
+
+		#content > li{
+			list-style-type: none;
+			border: solid 0px blue;
+			width: 200px;
+			height: 30px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 30px;
+			border-top-width: 0px;
+			background-color: #efefef;
+		}
+
+		#content a{
+			text-decoration: none;
+			color: black;
+		}
+
+		#content > li:nth-child(1){
+			border-radius: 10px 10px 0px 0px;
+		}
+
+		#content > li:nth-child(8){
+			border-radius: 0px 0px 10px 10px;
+		}
+
+		#content > li:nth-child(2n){
+			background-color: #de9093;
+		}
+
+		#content > li:first-child, 
+		#content > li:nth-child(3),
+		#content > li:last-child{
+			background-color: yellow;
+		}
 	</style>
 	</head>
 <body>
 	<div>
-		<ul>
-			<li><a href="#">MENU1</a></li>
+		<ul id="content">
+			<li style="border-top-width: 1px;"><a href="#">MENU1</a></li>
 			<li><a href="#">MENU2</a></li>
 			<li><a href="#">MENU3</a></li>
 			<li><a href="#">MENU4</a></li>

@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>가상클래스선택자 - 마우스 </title>
+	<style>
+		#sub li{
+			font-size: 2.0em;
+			font-weight: bold;
+			color:orange;
+			list-style-type: none;
+			float:left;
+			margin: 10px;
+		}
+
+		#sub li:hover{
+			color: blue;
+			font-size: 3.0em;
+			cursor: pointer;
+		}
+
+		#form_style{
+			margin-top: 50px;
+		}
+
+		#form_style  input:focus{
+			background-color: yellow;
+		}
+
+		#form_style  input:enabled{
+			color:red;
+			font-weight: bold;
+		}
+
+		#form_style input:disabled{
+			color:blue
+		}
+
+	</style>
 </head>
 <body>
-	<div>
+	<div id="sub">
 		<ul>
 			<li>사과</li>
 			<li>바나나</li>
@@ -18,7 +52,7 @@
 	</div>
 	<br/><br/><br>
 	
-	<div>
+	<div id="form_style">
 		<form>
 			<label>이름</label>
 			<input type="text" name="name"/><br/>
