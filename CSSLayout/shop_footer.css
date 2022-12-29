@@ -1,0 +1,35 @@
+footer{
+    width: 1000px;
+    margin: 0px auto;
+    border:0px solid red;
+}
+
+footer  div{
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border:1px solid #CCCCCC;
+}
+
+footer  > #office > div{
+    float:left;
+    margin: 2px;
+}
+
+footer  > #office > div:nth-child(1){
+    width: 200px;
+}
+
+footer  > #office > div:nth-child(2){
+    width: 400px;
+}
+
+footer  > #office > div:nth-child(3){
+    width: 380px;
+}
+
+footer > #copy{
+    width: 1000px;
+    background-color: #242424;
+    color: #FFFFFF;
+}

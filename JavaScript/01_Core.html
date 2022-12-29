@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본문법</title>
+    <script>
+        // 자료형 변수선언(데이터)  :  숫자, 문자(특수문자)
+        var su=10;          // 자료형 var / 변수명 su / 정수형데이터 10
+        var value=20;      // 자료형 var  / 변수명 value / 정수형 데이터 20
+        var num=25.5;     // 자료형 var / 변수명 num / 실수형 데이터 25.5
+        var ch='Y';          // 자료형 var / 변수명 ch / 문자형 데이터  Y ('Y' 또는 "Y") 
+        var str='apple';    // 자료형 var / 변수 str / 문자열형 데이터 apple ('apple' 또는 "apple")
+
+
+        document.writ("<h3>" + su  + "</h3>");
+        document.write("<h3 style='color:red'>" + value + "</h3>");
+        document.write(ch + "&nbsp;&nbsp;&nbsp;");
+        document.write(str);
+
+        var hap=su+value;    //  30=10 + 20
+        var mul=su*value;
+        var cha=su-value;
+        document.write("<h3>" + hap + "</h3>");
+        document.write("<h3>" + mul + "</h3>");
+        document.write("<h3>" + cha + "</h3>" );
+    </script>
+</head>
+<body>
+    <pre>
+        1. HTML : 웹페이지를 제작하기 위한 도구 (틀)
+        2. CSS : HTML 표현한다
+        3. JavaScript : HTML 제어한다
+            - 다양한 라이브러리를 사용할 수 있다
+            - 웹 애플리케이션을 만듬
+            - 서버를 구성하고 서버용 프로그램을 만들 수 있음
+
+        4. 자바스크립트 구성
+            - 자바스크립트 CORE : 기본문법과 구조, 데이터 타입, 조건문, 반복문, 함수....
+            - 자바스크립트 BOM(Browser Object Model) : 브라우저와 관련된 Window, Navigator, Laction, History ...
+            - 자바스크립트 DOMDocument Object Model): Element 제어, Style 제어, Event제어, Attribute 제어
+    </pre>
+</body>
+</html>

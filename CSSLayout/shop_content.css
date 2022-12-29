@@ -1,0 +1,58 @@
+#content{
+    width: 1000px;
+    margin: 5px auto;
+    border: 0px solid blue;
+}
+
+#content > #section1 {
+    width: 1000px;
+    margin: 0px auto;
+    border: 0px solid red;
+    overflow: hidden;
+}
+
+#content .banner1, #content .banner2{
+    height: 400px;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    line-height: 400px;
+    float:left;
+}
+
+#content .banner1{
+    width: 700px;
+}
+
+#content .banner2{
+    width: 280px;
+}
+
+#content  > #section2{
+    width: 1000px;
+    border: 0px solid red;
+    margin: 0px auto;
+}
+
+#content  .hit_product,
+#content  .md_product{
+    width: 1000px;
+    border: 0px solid green;
+    overflow: hidden;
+}
+
+#content .hit_product li,
+#content .md_product li{
+    width: 245px;
+    height: 400px;
+    border: 1px solid #CCCCCC;
+    float:left;
+    margin: 1px;
+    text-align: center;
+    line-height: 400px;
+}
+
+#content .hit_product a,
+#content .md_product a{
+    color:#282828;
+    font-size: 1.5em;
+}
