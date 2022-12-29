@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #first, #second, #third{
+            border: 1px solid;
+            width: 580px;
+            margin: 10px auto;
+            text-align: left;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+       #third  li{
+            list-style-type: none;
+            float:left;
+            border: 1px solid;
+            width: 120px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+
+            border-left-width: 0px;
+            border-bottom-width: 0px;
+        }
+
+        #third li:first-child{
+            border-left-width: 1px; 
+        } 
+
+        #third ul:last-child > li{
+            border-bottom-width: 1px;
+        }
+
+        #third p + ul > li{
+            background-color: rgb(194, 190, 190);
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="first">
+            <h1>레드향</h1>
+        
+            <p> 껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.  </p>
+
+            <p> 
+                레드향은 <em>한라봉과 귤을 교배</em>한 것으로  <br/>
+                일반 귤보다 2~3배 크고, 과육이 붉고 통통하다. 
+            </p>
+
+            <p> 
+                비타민 C와 비타민 P가 풍부해 <br/>
+                <strong> 혈액순환, 감기예방 </strong> 등에 좋은 것으로 알려져 있다. 
+            </p>
+        </div>
+
+        <div id="second">
+            <h2>레드향 샐러드 레시피</h2>
+            <p><strong>재료:</strong>레드향 1개, 아보카드 1개, 토마토 1개, 샐러드 채소 30g</p>
+            <p><strong>드레싱:</strong>올리브유 1큰술, 레몬즙 2큰술, 꿀 1큰술, 소금 약간</p>
+
+            <ol>
+                <li >샐러드 채소를 씻고 물기를 제거한 후 준비합니다.</li>
+                <li>레드향과 아보카도, 토마토를 먹기 좋은 크기를 썰어둡니다.</li>
+                <li>드레싱 재료를 믹서에 갈아줍니다.</li>
+                <li>볼에 샐러드 채소와 썰어 둔 레드향, 아보카도, 토마토를 넣고 드레싱을 뿌리면 끝!</li>
+            </ol>
+        </div>
+
+        <div id="third">
+            <h2>상품 구성</h2>
+            <p>선물용과 가정용 상품 구성</p>
+            <ul>
+                <li>용도</li>
+                <li>중량</li>
+                <li>갯수</li>
+                <li>가격</li>
+            </ul>
+
+            <ul>
+                <li></li>
+                <li>3kg</li>
+                <li>11~16과</li>
+                <li>35,000원</li>
+            </ul>
+
+            <ul>
+                <li style="border-top-width: 0px; line-height: 5px;">선물용</li>
+                <li>5kg</li>
+                <li>18~26과</li>
+                <li>52,000원</li>
+            </ul>
+
+            <ul>
+                <li></li>
+                <li>3kg</li>
+                <li>11~16과</li>
+                <li>30,000원</li>
+            </ul>
+
+            <ul>
+                <li style="border-top-width: 0px; line-height: 5px;" >가정용</li>
+                <li>5kg</li>
+                <li>18~26과</li>
+                <li>47,000원</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
