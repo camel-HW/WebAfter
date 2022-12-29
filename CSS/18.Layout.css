@@ -57,7 +57,7 @@ header #lnb li:nth-child(1){
 #content > #aside{
     height: 1000px;
     border: 1px solid black;
-    margin: 5px 5px;
+    margin: 5px auto;
     font-weight: bold;
     font-size: 1.2em;
     float:left;
@@ -66,6 +66,7 @@ header #lnb li:nth-child(1){
 #content > #section{
     width: 70%;
     font-family: 'Rubik Bubbles', cursive;
+    margin-right: 2px;
 }
 
 #content > #aside{
